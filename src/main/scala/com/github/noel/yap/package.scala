@@ -6,7 +6,7 @@ package object yap {
       lazy val f: Memo.==>[(BigInt, Long), BigInt] = Memo {
         case (a, 0) => a
         case (a, 1) => a
-        case (a, `n`) => f(a * n, n - 1)
+        case (a, n) => f(a * n, n - 1)
       }
 
       f(BigInt(1), n)

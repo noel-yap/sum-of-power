@@ -10,3 +10,7 @@ dependencies {
 
   testCompile 'org.scalatest:scalatest_2.10:3.0.1'
 }
+
+task run(type: Exec) {
+  commandLine "${buildDir}/resources/main/scripts/sum-of-power.scala", 5
+}
