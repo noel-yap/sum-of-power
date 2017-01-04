@@ -1,0 +1,6 @@
+.idea
+.workspace
+build
+out
+*.ipr
+*.iws
